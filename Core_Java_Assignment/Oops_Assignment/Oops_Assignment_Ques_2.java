@@ -3,7 +3,7 @@ package oops_assignments;
 class BankClass{
 	String bankName;
 	int cash;
-	void bankDetails() {
+	void bankdetails() {
 		System.out.println("This  is "+bankName+" Details");
 	}
 }
