@@ -1,0 +1,43 @@
+1.Filter data where city is Atlanta and state is GA.
+{$and:[{city:"ATLANTA"},{state:"GA"}]}
+
+2.Using aggregation perform above filter.
+{$match:{$and:[{city:"ATLANTA"},{state:"GA"}]}}
+
+3.use $group to count the no of zipcodes in atlanta
+{$match:{city:”ATLANTA”},count:”countAllZipcodes:}
+
+4.query to count the total no of population in atlanta
+{$match:{city:”ATLANTA”}},{$group:{
+  _id: "$city",
+  count:{$sum:1},
+  total:{$sum:"$pop"}
+}
+5.use aggregate to find the total population in each state
+
+group:{
+  _id: "$state",
+  count:{$sum:1},
+  total:{$sum:"$pop"}
+}
+
+6.write a query to sort the population,highest first.
+{$sort:{
+pop:-1
+}}
+
+7.limit the results to just 3 results .what are the top 3 states in population
+{$sort:{pop: -1}},{$limit:3}
+
+8.What are the top 3 cities in population in Texas.
+{$match:{state:”TEXAS”}},{$sort:-1},{$limit:3}
+
+9.write a query to get the average city population in each state.
+{$group:{
+  _id: {state:"$state"},
+  average:{$avg:"$pop"}
+}}
+
+10.What are the top 3 cities in terms of cities population
+{$sort:-1},{$limit:3}
+
