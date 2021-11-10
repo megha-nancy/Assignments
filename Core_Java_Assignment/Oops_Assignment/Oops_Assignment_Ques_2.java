@@ -1,5 +1,5 @@
 class Employee{
-   void sal(){
+   void salary(){
        }
        }
 class Manager extends Employee
