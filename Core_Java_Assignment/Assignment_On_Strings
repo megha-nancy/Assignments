@@ -1,0 +1,111 @@
+1.Write a program to calculate the length of the string using string function.
+
+class StringLength {
+
+	public static void main(String[] args) {
+
+		String s1="Hello World";
+		System.out.println("Length of string is : "+s1.length());
+	}
+
+}
+2.Write a program to join the two strings using string function.
+class StringConcat {
+
+	public static void main(String[] args) {
+		String s1="Hello,";
+		String s2=" How are you :)";
+		System.out.println("Final string after concatenation : "+s1.concat(s2));
+	}
+
+}
+
+3.Write a program to perform string operations.
+class StringMethods {
+
+	public static void main(String[] args) {
+
+		String s1="Java String pool refers to collection of Strings which are stored in heap memory";
+	    System.out.println("String in uppercase : "+s1.toLowerCase();
+	    System.out.println("String in uppercase : "+s1.toUpperCase());
+	    System.out.println("Replaced string is : "+s1.replace('a', '$'));
+	    System.out.println("Is substring contain? "+s1.contains("collections"));
+      String s2="java string pool refers to collection of strings which are stored in heap memory";
+	     System.out.println(s1.equals(s2));
+		 System.out.println(s1.equalsIgnoreCase(s2));
+	}
+
+} 
+4.Write a program to append multiple strings using StringBuffer.
+class StringBufferExample {
+
+	public static void main(String[] args) {
+    StringBuffer s1=new StringBuffer("StringBuffer");
+     StringBuffer s2=s1.append(" is a peer class of String ");
+     StringBuffer s3=s2.append("that provides much of ");
+     StringBuffer s4=s3.append("the functionality of strings");
+     System.out.println(s4);
+	}
+
+}
+
+
+5.Write aprogram to insert some content into the another string at a specified index using stringbuffer.
+class StringBufferExample2 {
+
+	public static void main(String[] args) {
+
+		StringBuffer s1=new StringBuffer("It is used to_at the specified index position");
+	    System.out.println(s1.insert(14,"insert "));
+	    
+	}
+	
+
+}
+
+6. Write a program to insert the string into the another string using string buffer.
+
+class StringBufferExample2 {
+
+	public static void main(String[] args) {
+
+		StringBuffer s1=new StringBuffer("It is used to_at the specified index position");
+	    System.out.println(s1.reverse());
+	    
+	}
+}
+7.Write a program to append another string using string builder.
+
+class StringBufferExample {
+
+	public static void main(String[] args) {
+    StringBuilder s1=new StringBuilder("StringBuffer");
+     StringBuilder s2=s1.append(" is a peer class of String ");
+     StringBuilder s3=s2.append("that provides much of ");
+     StringBuilder s4=s3.append("the functionality of strings");
+     System.out.println(s4);
+	}
+
+}
+
+8.Write a program to insert string into another string using string builder.
+
+class StringBufferExample2 {
+
+	public static void main(String[] args) {
+
+		StringBuilder s1=new StringBuilder("It is used to_at the specified index position");
+	    System.out.println(s1.reverse());
+	    
+	}
+}
+
+9.Write a program to reverse the string using string builder.
+class StringBufferExample2 {
+
+	public static void main(String[] args) {
+
+		StringBuilder s1=new StringBuilder("It is used to_at the specified index position");
+	    System.out.println(s1.reverse());
+	    
+	}
