@@ -1,0 +1,141 @@
+1.Algorithm to check input number is Armstrong or not.
+===============================================
+Step0:Start.
+Step1:Input the number.
+Step2:Initialize sum=0 and temp=number.
+Step3:Find the total number of digits.
+Step4:Repeat until (temp!=0).
+Step5 :Remainder =temp%10.
+Step6:result =result +pow(remainder,n).
+Step7:temp=temp/10.
+Step8:if (result==number)
+Step9:Display “Armstrong” 
+           Else
+           Display “Not Armstrong”     
+Step10:Stop
+
+2.Find all the Armstrong number in a given range
+===========================================
+Step0:Start
+Step1:Input the ranges
+Step2:Enter the number
+Step3:Initialize sum=0 and temp=number.
+Step4:Repeat until (temp!=0)
+Step5:Remainder=temp%10.
+Step6:result=result+pow(remainder,n)
+Step7:temp=temp/10.
+Step8:if (result==number)
+Step9:print that number.
+Step10:Stop.
+
+
+
+
+
+
+
+3.Algorithm for finding S.I. and C.I
+==================================
+Step1:Start.
+Step2:Read input to check for S.I. or C.I.
+Step3:if input=S.I Read input for p,q,r
+          Step i:interest=(p*q*r)/100
+          Step ii:print simple interest.
+Step4:else input =C.I, Read input for p,n,r
+         Step i:calculate c.i =pow(p*(1+r/100),n)-p.
+         Step ii :print compound interest.
+Step 5:Stop.
+
+4.Supply marks of 3 subjects and declare the results of students
+=====================================================
+Step1:Start
+Step2:Input marks for p,c,m
+Step3:if (p>60 && c>60 && m>60)
+             Print passed.
+Step4:else if ((p>60 && c>60) || (p>60 && m>60) ||(c>60 && m>60))
+        Print promoted.
+Step5:else failed.
+
+5.Algorithm to calculate income tax:
+===================================
+Step1.Start
+Step2.Take salary as input.
+Step3.if (salary>500000 && salary<100000)
+       Calculate tax=(30*(salary-500000)/100)+(20*(salary-300000)/100)+(10*(salary-181000)/100)
+Step4:else if(salary>30000 && salary<50000)
+        Calculate tax=(20*(salary-300000)/100)+(10*(salary-181000)/100)
+Step5:else if(salary>181000 && salary <300000)
+            Calculate tax=(10*salary/100)
+Step6:else (salary>0 && salary<180000)
+            Calculate tax=0
+Step7:stop.
+
+6.Algorithm to login into the page		
+Step1:Start
+Step2:initialize user_name and pass_word.
+          Initialize count=0
+Step3:while count<3
+            Take input for username and password
+ Step4:if(username==user_name && password==pass_word)
+             Print “Access Granted”
+            Break.
+           Else print “Access Denied…try again”
+                Count=count+1.
+Step5:if(count==3)
+          Break.
+Step6:Stop.
+7.Algorithm to search a number in a given array
+===========================================
+Step1:Start
+Step2:Enter an array.
+Step3:take input for searching number i.e. n.
+Step4:for i=0 to i=15
+            If(a[i]==n)
+            Print “number is present at a[i] position.”
+Step5:print “Number is not present in this array”.
+Step6:Stop.
+
+8.Algorithm to sort an array using bubble sort.
+========================================
+Step1:Start
+Step2:Take array input.
+Step3:for j=0 to j=15
+Step4:for i=0 to i=15
+Step5:If(a[i]>a[i+1])
+            temp=a[i]
+            a[i]=a[i+1]
+            a[i+1]=temp
+Step6:stop
+9.Calculate average marks of three students
+=========================================
+Step1:Start
+Step2:take input of 3 subjects of student1 i.e. A1,B1,C1
+Step3:take input of 3 subjects of student2 i.e. A2,B2,C2
+Step4:take input of 3 subjects of student3 i.e. A3,B3,C3
+Step4:calculate total1=(A1+B1+C1)
+            Avj!=total1/3.
+            calculate total2=(A2+B2+C2)
+            Avj2=total2/3.
+            calculate total3=(A3+B3+C3)
+            Avj3=total3/3.
+Step5:print “Total:” and “average:” result of individual student 
+Step6: calculate classTotal=A1+A2+A3
+            Avj=classTotal/3 of  3 students.
+Step7:Stop.           
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
