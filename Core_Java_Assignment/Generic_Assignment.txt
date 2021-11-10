@@ -1,1 +1,179 @@
+Solution 1.
+-----------------------------------------------------------------------------------------------
+package Generics;
+
+class Employee {
+
+	int id;
+	String name;
+	double salary;
+	String department;
+	public Employee(int id, String name, double salary, String department) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+		this.department = department;
+	}
+	//@Override
+	
+	public String toString() {
+		return "Employee [name = "+ name +" id = " + id+" Salary = "+salary+" Department "+department+"]";
+	}
+	
+}
+
+package Generics;
+
+import java.util.HashSet;
+
+public class Company {
+
+	public static void main(String[] args) {
+		HashSet<Employee> h = new HashSet<>();
+		h.add(new Employee(1,"Megha",20000.0,"Testing"));
+		h.add(new Employee(2,"Nancy",30000.0,"Developing"));
+		h.add(new Employee(3,"Charlotte",50000.0,"Sales"));
+		 Company.printDetails(h);
+		
+	}
+	
+	public static void printDetails(HashSet<Employee> h) {
+		for(Employee e:h) {
+			System.out.println(e);
+		}
+
+	}
+
+}
+
+Solution 2
+-------------------------------------------------------------------------------------------------
+package Generics;
+import java.util.*;
+
+public class HoldingRandom {
+
+	public static void main(String[] args) {
+
+		HashMap<Integer,Double> h=new HashMap<>();
+		h.put(1,5.2);
+		h.put(2, 1.0);
+		h.put(3, 2.0);
+		h.put(4, 3.0);
+		h.put(5, 5.1);
+		h.put(6, 4.5);
+		h.put(7, 9.0);
+		System.out.println(h);
+		
+	}
+
+}
+
+Solution 3
+--------------------------------------------------------------------------------------------------
+package Generics;
+
+class Pair<K,V> {
+   public K key;
+   public V value;
+   
+   
+	public K getKey() {
+	return key;
+}
+
+
+public void setKey(K key) {
+	this.key = key;
+}
+
+
+public V getValue() {
+	return value;
+}
+
+
+public void setValue(V value) {
+	this.value = value;
+}
+
+
+	public Pair(K key, V value) {
+	super();
+	this.key = key;
+	this.value = value;
+}
+
+
+	public String toString() {
+	return "Pair [key = "+ key+ ", Value = "+ value +"]";	
+	}
+
+}
+
+package Generics;
+
+public class DesigningPAir {
+
+	public static void main(String[] args) {
+    Pair <String,String> obj1=new Pair<>("1","Megha");
+    obj1.setKey("5");
+    obj1.setValue("Nancy");
+    System.out.println(obj1.toString());
+    
+    Pair<String,java.util.Date> obj2=new Pair<>("3",new java.util.Date());
+    System.out.println(obj2.toString());
+	}
+
+}
+
+Solution 4
+------------------------------------------------------------------------------------------------
+package Generics;
+
+public class SwappingProgram {
+
+	public static void main(String[] args) {
+    Integer[] arr= {4,5,6,7};
+    int p=2;
+    int q=3;
+    Swapping<Integer> a=new Swapping<>(arr);
+   System.out.println("Before Swapping");
+    a.printArray(arr);
+    a.swap(arr,p,q);
+    System.out.println("After Swapping");
+    a.printArray(arr);
+    
+	}
+
+}
+class Swapping<T>{
+	private T[] arr;
+
+	public Swapping(T[] arr) {
+		super();
+		this.arr = arr;
+	}
+
+	public T[] getArr() {
+		return arr;
+	}
+	
+    public void setArr(T[] arr) {
+		this.arr = arr;
+	}
+
+	public <T> void swap(T[] arr,int p, int q) {
+    	T temp=arr[p];
+    	arr[p]=arr[q];
+    	arr[q]=temp;
+    }
+    public <T> void printArray(T[] arr) {
+         for(T e:arr) {
+        	 System.out.print(e +"\t");
+         }
+         System.out.println("\n");
+    }
+}
 
