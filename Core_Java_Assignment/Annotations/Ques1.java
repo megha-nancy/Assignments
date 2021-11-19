@@ -16,7 +16,7 @@ public class anno1 {
 
 	@Test(testcase=1)
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub			
+			
 	}
 
 }
